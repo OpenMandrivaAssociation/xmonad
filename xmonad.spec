@@ -11,7 +11,7 @@ Source: xmonad-%{version}.tar.bz2
 Summary: A tiling window manager
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: ghc, haddock, haskell-X11, haskell-macros
-
+BuildRequires: libxinerama-devel
 
 %description
 xmonad is a tiling window manager for X. Windows are arranged
