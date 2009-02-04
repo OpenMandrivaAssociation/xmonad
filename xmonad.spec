@@ -5,7 +5,7 @@ Name: xmonad
 Version: 0.8.1
 Release: %mkrel 1
 License: BSD
-Group: User Interface/X
+Group: Graphical desktop/Other
 URL: http://xmonad.org
 Source: xmonad-%{version}.tar.bz2
 Summary: A tiling window manager
