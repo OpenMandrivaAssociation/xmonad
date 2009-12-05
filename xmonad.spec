@@ -1,16 +1,19 @@
 %define _cabal_setup Setup.lhs
-%define ghc_version 6.10.1
+%define ghc_version 6.10.4
 
 Name: xmonad
-Version: 0.8.1
-Release: %mkrel 2
+Version: 0.9
+Release: %mkrel 1
 License: BSD
 Group: Graphical desktop/Other
 URL: http://xmonad.org
-Source: xmonad-%{version}.tar.bz2
+Source: xmonad-%{version}.tar.gz
 Summary: A tiling window manager
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
-BuildRequires: ghc, haddock, haskell-X11, haskell-macros
+BuildRequires: ghc
+BuildRequires: haddock
+BuildRequires: haskell-X11 >= 1.4.6.1
+BuildRequires: haskell-macros
 BuildRequires: libxinerama-devel
 
 %description
@@ -51,6 +54,7 @@ rm -rf %{buildroot}
 %doc LICENSE
 %{_bindir}/xmonad
 %{_libdir}/%{name}-%{version}/ghc-%{ghc_version}/*
+%{_datadir}/%{name}-%{version}
 %{_datadir}/doc/%{name}-%{version}/html/*
 %{_datadir}/doc/%{name}-%{version}/LICENSE
 %{_datadir}/haskell-deps/%{name}-%{version}-%{release}/*
