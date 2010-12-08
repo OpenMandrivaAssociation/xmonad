@@ -3,7 +3,7 @@
 
 Name: xmonad
 Version: 0.9
-Release: %mkrel 3
+Release: %mkrel 4
 License: BSD
 Group: Graphical desktop/Other
 URL: http://xmonad.org
