@@ -4,7 +4,7 @@
 %define module  xmonad
 Name:           %{module}
 Version:        0.10
-Release:        1
+Release:        2
 Summary:        A tiling window manager
 Group:          Development/Other
 License:        BSD
